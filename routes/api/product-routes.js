@@ -9,7 +9,10 @@ router.get('/', (req, res) => {
    // be sure to include its associated Category and Tag data
 
   Product.findAll({
-    include: [{model: Product}],
+    attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
+    include: [
+    Category, {model: Tag, through: Product},
+    ]
   })
   .then((result) =>{
 res.status(200).json(result)
@@ -28,6 +31,7 @@ router.get('/:id', (req, res) => {
     },
 
   // be sure to include its associated Category and Tag data
+  attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
     include: [{model: Category, Tag}],
   })
   .then((result) =>{
@@ -114,7 +118,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
-  Product.delete({
+  Product.destroy({
     where: {
       id: req.params.id
     }
