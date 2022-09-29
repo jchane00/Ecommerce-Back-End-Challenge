@@ -27,7 +27,3 @@ You can now start testing in Insomnia.
 ## Video Link
 
 [Walkthrough Video](https://drive.google.com/file/d/1vzsQJUW6g9JTkXGgi7uAa4HczkKNCckX/view)
-
-## Images
-
-![Ecommerce_db](../assets/images/Screenshot.png)
