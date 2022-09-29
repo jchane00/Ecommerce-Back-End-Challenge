@@ -22,7 +22,7 @@ You can now start testing in Insomnia.
 
 1. [How to Use](#how-to-use)
 2. [Video Link](#video-link)
-3. [Images](#images)
+
 
 ## Video Link
 
