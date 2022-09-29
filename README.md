@@ -30,4 +30,4 @@ You can now start testing in Insomnia.
 
 ## Images
 
-![Ecommerce_db](assets/images/Screenshot.png)
+![Ecommerce_db](../assets/images/Screenshot.png)
